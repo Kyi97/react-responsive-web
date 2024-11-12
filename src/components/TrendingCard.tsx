@@ -1,6 +1,14 @@
 import clockIcon from "../assets/images/clock-icon.svg";
+import React from 'react';
 
-const TrendingCard = ({ image, title, description, timeAgo }) => {
+interface TrendingCardProps {
+  image: string;
+  title: string;
+  description: string;
+  timeAgo: string;
+}
+
+const TrendingCard: React.FC<TrendingCardProps> = ({ image, title, description, timeAgo }) => {
   return (
     <div className="flex flex-col w-64 bg-white rounded-md overflow-hidden">
       <img src={image} alt="trend" />
@@ -17,3 +25,4 @@ const TrendingCard = ({ image, title, description, timeAgo }) => {
 };
 
 export default TrendingCard;
+
