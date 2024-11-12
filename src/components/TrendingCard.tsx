@@ -1,4 +1,3 @@
-import React from "react";
 import clockIcon from "../assets/images/clock-icon.svg";
 
 const TrendingCard = ({ image, title, description, timeAgo }) => {

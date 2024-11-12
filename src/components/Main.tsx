@@ -1,4 +1,4 @@
-import React from "react";
+
 import clockIcon from "../assets/images/clock-icon.svg";
 
 const Main = () => {
